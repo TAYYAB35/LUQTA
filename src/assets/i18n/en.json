@@ -1,0 +1,66 @@
+{
+  "layout-sidebar": {
+    "title": "Hi, DigiContests",
+    "subtitle": "Manage your contests and participants efficiently.",
+    "dashboard": "Dashboard",
+    "subscription": "Subscription",
+    "contests": "Contests",
+    "analysis": "Analysis",
+    "billing": "Billing & payment",
+    "profile": "Profile",
+    "updates": "Updates",
+    "logout": "Logout"
+  },
+  "dashboard": {
+    "participant": {
+      "title": "Participants",
+      "btn_text": {
+        "title": "Filter by Contests",
+        "filter_old": "Filter by Old Customers",
+        "filter_new": "Filter by New Customers"
+      }
+    },
+    "purchase": {
+      "title": "Purchase plan",
+      "active": "Active Contest",
+      "inactive": "Remaining Contest"
+    },
+    "all_contest":{
+      "title": "All Contests",
+      "btn_text": {
+        "view": "View All"
+      }
+    },
+    "contest":{
+      "title": "Contest",
+      "completed": "Completed",
+      "in_progress": "In Progress",
+      "loss": "loss"  
+    },
+    "rate":{
+      "title": "Completion Rate",
+      "timeline":{
+        "title": "Years",
+        "y_23":{
+          "title":"2023",
+          "subtile":"Contests"
+        },
+        "y_24":{
+          "title":"2024",
+          "subtile":"Contests"
+        },
+        "y_25":{
+          "title":"2025",
+          "subtile":"Contests"
+        }
+      },
+      "completed":{
+        "title" : "Completed Contests",
+        "subtitle" :"users",
+        "desc" : " from last year"
+      }
+
+    }
+
+  }
+}

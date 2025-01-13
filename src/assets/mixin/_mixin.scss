@@ -1,0 +1,41 @@
+
+@mixin flex-container($flex-direction : row, $justify-content: center, $align-items : center) {
+    display: flex;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+
+@mixin respond($breakPoint) {
+
+    @if $breakPoint ==phone {
+        @media (max-width: 767px) {
+            @content;
+        }
+    }
+
+    @if $breakPoint ==tab-port {
+        @media (min-width: 768px) and (max-width: 992px) {
+            // 56.25 em
+            @content;
+        }
+    }
+
+    @if $breakPoint ==small-desktop {
+        @media (min-width: 992px) and (max-width: 1200px) {
+            @content;
+        }
+    }
+
+    @if $breakPoint ==regular-desktop {
+        @media (min-width: 1280px) and (max-width: 1799px) {
+            @content;
+        }
+    }
+
+    @if $breakPoint ==large-desktop {
+        @media (min-width: 1800px) {
+            @content;
+        }
+    }
+}

@@ -1,0 +1,64 @@
+{
+  "layout-sidebar": {
+    "title": "مرحبا ، DigiContests",
+    "subtitle": "إدارة مسابقاتك والمشاركين بكفاءة",
+    "dashboard": "لوحه القياده",
+    "subscription": "اكتتاب",
+    "contests": "مسابقات",
+    "analysis": "تحليل",
+    "billing": "الفواتير والدفع",
+    "profile": "ملف تعريف",
+    "updates": "مستجدات",
+    "logout": "الخروج"
+  },
+  "dashboard": {
+    "participant": {
+      "title": "المشاركون",
+      "btn_text": {
+        "title": "تصفية حسب المسابقات",
+        "filter_old": "التصفية حسب العملاء القدامى",
+        "filter_new": "التصفية حسب العملاء الجدد"
+      }
+    },
+    "purchase": {
+      "title": "خطة الشراء",
+      "active": "مسابقة نشطة",
+      "inactive": "المسابقة المتبقية"
+    },
+    "all_contest": {
+      "title": "جميع المسابقات",
+      "btn_text": {
+        "view": "عرض الكل"
+      }
+    },
+    "contest": {
+      "title": "المسابقه",
+      "completed": "اكمال",
+      "in_progress": "قيد التنفيذ",
+      "loss": "ضياع"
+    },
+    "rate": {
+      "title": "معدل الإكمال",
+      "timeline": {
+        "title": "السنوات",
+        "y_23": {
+          "title": "2023",
+          "subtile": "المسابقات"
+        },
+        "y_24": {
+          "title": "2024",
+          "subtile": "المسابقات"
+        },
+        "y_25": {
+          "title": "2025",
+          "subtile": "المسابقات"
+        }
+      },
+      "completed": {
+        "title": "المسابقات المكتملة",
+        "subtitle": "المستخدمين",
+        "desc": "من العام الماضي"
+      }
+    }
+  }
+}

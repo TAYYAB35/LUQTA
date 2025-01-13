@@ -1,0 +1,363 @@
+{
+    "contest": [
+        {
+            "name": "Trivia Quest",
+            "description": "A digital trivia game where participants answer questions on various topics to accumulate points.",
+            "timeline": "01:03:56",
+            "levels": [
+                "Level 1",
+                "Level 2"
+            ],
+            "users": [
+                "assets/images/l1.png",
+                "assets/images/l2.png",
+                "assets/images/l3.png"
+            ],
+            "buttonText": "Win an IPHONE 15",
+            "routerLink": "/constant-Detail"
+        },
+        {
+            "name": "Trivia Quest",
+            "description": "A digital trivia game where participants answer questions on various topics to accumulate points.",
+            "timeline": "01:03:56",
+            "levels": [
+                "Level 1",
+                "Level 2"
+            ],
+            "users": [
+                "assets/images/l1.png",
+                "assets/images/l2.png",
+                "assets/images/l3.png"
+            ],
+            "buttonText": "Win an IPHONE 15",
+            "routerLink": "/constant-Detail"
+        },
+        {
+            "name": "Trivia Quest",
+            "description": "A digital trivia game where participants answer questions on various topics to accumulate points.",
+            "timeline": "01:03:56",
+            "levels": [
+                "Level 1",
+                "Level 2"
+            ],
+            "users": [
+                "assets/images/l1.png",
+                "assets/images/l2.png",
+                "assets/images/l3.png"
+            ],
+            "buttonText": "Win an IPHONE 15",
+            "routerLink": "/constant-Detail"
+        },
+        {
+            "name": "Trivia Quest",
+            "description": "A digital trivia game where participants answer questions on various topics to accumulate points.",
+            "timeline": "01:03:56",
+            "levels": [
+                "Level 1",
+                "Level 2"
+            ],
+            "users": [
+                "assets/images/l1.png",
+                "assets/images/l2.png",
+                "assets/images/l3.png"
+            ],
+            "buttonText": "Win an IPHONE 15",
+            "routerLink": "/constant-Detail"
+        },
+        {
+            "name": "Trivia Quest",
+            "description": "A digital trivia game where participants answer questions on various topics to accumulate points.",
+            "timeline": "01:03:56",
+            "levels": [
+                "Level 1",
+                "Level 2"
+            ],
+            "users": [
+                "assets/images/l1.png",
+                "assets/images/l2.png",
+                "assets/images/l3.png"
+            ],
+            "buttonText": "Win an IPHONE 15",
+            "routerLink": "/constant-Detail"
+        },
+        {
+            "name": "Trivia Quest",
+            "description": "A digital trivia game where participants answer questions on various topics to accumulate points.",
+            "timeline": "01:03:56",
+            "levels": [
+                "Level 1",
+                "Level 2"
+            ],
+            "users": [
+                "assets/images/l1.png",
+                "assets/images/l2.png",
+                "assets/images/l3.png"
+            ],
+            "buttonText": "Win an IPHONE 15",
+            "routerLink": "/constant-Detail"
+        },
+        {
+            "name": "Trivia Quest",
+            "description": "A digital trivia game where participants answer questions on various topics to accumulate points.",
+            "timeline": "01:03:56",
+            "levels": [
+                "Level 1",
+                "Level 2"
+            ],
+            "users": [
+                "assets/images/l1.png",
+                "assets/images/l2.png",
+                "assets/images/l3.png"
+            ],
+            "buttonText": "Win an IPHONE 15",
+            "routerLink": "/constant-Detail"
+        },
+        {
+            "name": "Trivia Quest",
+            "description": "A digital trivia game where participants answer questions on various topics to accumulate points.",
+            "timeline": "01:03:56",
+            "levels": [
+                "Level 1",
+                "Level 2"
+            ],
+            "users": [
+                "assets/images/l1.png",
+                "assets/images/l2.png",
+                "assets/images/l3.png"
+            ],
+            "buttonText": "Win an IPHONE 15",
+            "routerLink": "/constant-Detail"
+        },
+        {
+            "name": "Trivia Quest",
+            "description": "A digital trivia game where participants answer questions on various topics to accumulate points.",
+            "timeline": "01:03:56",
+            "levels": [
+                "Level 1",
+                "Level 2"
+            ],
+            "users": [
+                "assets/images/l1.png",
+                "assets/images/l2.png",
+                "assets/images/l3.png"
+            ],
+            "buttonText": "Win an IPHONE 15",
+            "routerLink": "/constant-Detail"
+        }
+    ],
+    "contest_detail": [
+        {
+            "name": "Trivia Quest",
+            "description": "A digital trivia game where participants answer questions on various topics to accumulate points.",
+            "timeline": "01:03:56",
+            "levels": [
+                {
+                    "level": "Level 1",
+                    "details": "Download Talabat app and enter a unique registration code to access the game."
+                },
+                {
+                    "level": "Level 2",
+                    "details": "Download Talabat app and enter a unique registration code to access the game."
+                }
+            ],
+            "drawDates": {
+                "start": "14/23/1004",
+                "end": "14/23/1004"
+            },
+            "prize": "IPHONE 15",
+            "users": [
+                "assets/images/l1.png",
+                "assets/images/l2.png",
+                "assets/images/l3.png"
+            ]
+        }
+    ],
+    "contest_monitoring": [
+        {
+            "title": "Total Contest",
+            "number": 678,
+            "percentage": 12,
+            "progressText": "on this week",
+            "icon": "assets/images/participant.svg"
+        },
+        {
+            "title": "Views",
+            "number": "569,230",
+            "percentage": 18,
+            "progressText": "on this week",
+            "icon": "assets/images/view.svg"
+        },
+        {
+            "title": "Clicks",
+            "number": "350,745",
+            "percentage": -2,
+            "progressText": "on this week",
+            "icon": "assets/images/clicks.svg"
+        },
+        {
+            "title": "Visitors",
+            "number": "350,745",
+            "percentage": -2,
+            "progressText": "on this week",
+            "icon": "assets/images/visitor.svg"
+        }
+    ],
+    "analysis": [
+        {
+            "title": "Total Contest",
+            "number": 678,
+            "percentage": 12,
+            "progressText": "on this week",
+            "icon": "assets/images/participant.svg"
+        },
+        {
+            "title": "Active Contests",
+            "number": "569,230",
+            "percentage": 18,
+            "progressText": "on this week",
+            "icon": "assets/images/view.svg"
+        },
+        {
+            "title": "Pending",
+            "number": "350,745",
+            "percentage": -2,
+            "progressText": "on this week",
+            "icon": "assets/images/clicks.svg"
+        },
+        {
+            "title": "Visitors",
+            "number": "350,745",
+            "percentage": -2,
+            "progressText": "on this week",
+            "icon": "assets/images/visitor.svg"
+        },
+        {
+            "title": "Clicks",
+            "number": "350,745",
+            "percentage": -2,
+            "progressText": "on this week",
+            "icon": "assets/images/pending.svg"
+        }
+    ],
+    "levels": [
+        {
+            "id": 1,
+            "name": "Level 1",
+            "description": "Downloading app",
+            "status": "completed",
+            "img": "../../../../assets/images/computer.png"
+        },
+        {
+            "id": 2,
+            "name": "Level 2",
+            "description": "Downloading app",
+            "status": "not completed",
+            "img": "../../../../assets/images/zap.png"
+        },
+        {
+            "id": 3,
+            "name": "Level 3",
+            "description": "Downloading app",
+            "status": "completed",
+            "img": "../../../../assets/images/ai-content-generator-01.png"
+        },
+        {
+            "id": 4,
+            "name": "Level 4",
+            "description": "Downloading app",
+            "status": "not completed",
+            "img": "../../../../assets/images/airplane-take-off-01.png"
+        },
+        {
+            "id": 5,
+            "name": "Level 5",
+            "description": "Downloading app",
+            "status": "completed",
+            "img": "../../../../assets/images/ambulance.png"
+        },
+        {
+            "id": 6,
+            "name": "Level 6",
+            "description": "Downloading app",
+            "status": "not completed",
+            "img": "../../../../assets/images/audio-book-01.png"
+        },
+        {
+            "id": 7,
+            "name": "Level 7",
+            "description": "Downloading app",
+            "status": "completed",
+            "img": "../../../../assets/images/computer.png"
+        },
+        {
+            "id": 8,
+            "name": "Level 8",
+            "description": "Downloading app",
+            "status": "not completed",
+            "img": "../../../../assets/images/computer.png"
+        },
+        {
+            "id": 9,
+            "name": "Level 9",
+            "description": "Downloading app",
+            "status": "completed",
+            "img": "../../../../assets/images/computer.png"
+        },
+        {
+            "id": 10,
+            "name": "Level 10",
+            "description": "Downloading app",
+            "status": "not completed",
+            "img": "../../../../assets/images/computer.png"
+        },
+        {
+            "id": 11,
+            "name": "Level 11",
+            "description": "Downloading app",
+            "status": "completed",
+            "img": "../../../../assets/images/computer.png"
+        },
+        {
+            "id": 12,
+            "name": "Level 12",
+            "description": "Downloading app",
+            "status": "not completed",
+            "img": "../../../../assets/images/computer.png"
+        },
+        {
+            "id": 14,
+            "name": "Level 2",
+            "description": "Downloading app",
+            "status": "not completed",
+            "img": "../../../../assets/images/zap.png"
+        },
+        {
+            "id": 15,
+            "name": "Level 3",
+            "description": "Downloading app",
+            "status": "completed",
+            "img": "../../../../assets/images/ai-content-generator-01.png"
+        },
+        {
+            "id": 16,
+            "name": "Level 4",
+            "description": "Downloading app",
+            "status": "not completed",
+            "img": "../../../../assets/images/airplane-take-off-01.png"
+        },
+        {
+            "id": 17,
+            "name": "Level 5",
+            "description": "Downloading app",
+            "status": "completed",
+            "img": "../../../../assets/images/ambulance.png"
+        },
+        {
+            "id": 18,
+            "name": "Level 6",
+            "description": "Downloading app",
+            "status": "not completed",
+            "img": "../../../../assets/images/audio-book-01.png"
+        }
+    ]
+}
