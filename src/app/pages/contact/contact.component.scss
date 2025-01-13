@@ -1,0 +1,276 @@
+$background-color: #4A3709;
+$button-color: #B88917;
+$border-color: #6e520e;
+
+.hero-content {
+    margin-bottom: 10px;
+    margin-top: 58px;
+
+    .hero-arrow {
+        margin-left: 240px;
+    }
+
+    .hero-data {
+
+        .query {
+            font-family: 'SF Pro Text';
+            font-size: 42px;
+            font-weight: 800;
+        }
+
+        .contact-btn {
+            width: 261px;
+            text-align: center;
+            border-radius: 40px;
+            font-size: 48px;
+            font-weight: 400;
+            background-color: #85AAC5;
+            color: #fff;
+            border: none;
+            font-family: 'Salsa' !important;
+        }
+
+    }
+
+    .hero-para {
+        margin-top: 46px;
+        color: #828999;
+        font-size: 24px;
+        font-weight: 600;
+    }
+}
+
+.contact-data {
+    margin-top: 165px;
+    border-radius: 32px;
+    background-color: #251B05;
+    z-index: 1000 !important;
+
+    .form-data {
+        padding: 92px 72px;
+
+        .connect-text {
+            color: #fff;
+            font-size: 42px;
+            font-weight: 600;
+            width: max-content;
+            margin-bottom: 0px !important;
+
+            .with-text {
+                width: 122px;
+                text-align: center;
+                font-family: 'Salsa' !important;
+                border-radius: 34px;
+                padding: 8px;
+                color: #fff;
+                font-size: 48px;
+                font-weight: 400;
+                background-color: #FF912B;
+            }
+        }
+
+        .text-today {
+            font-family: 'Salsa' !important;
+            font-size: 48px;
+            font-weight: 400;
+            color: #fff;
+            border-radius: 34px;
+            background-color: #85AAC5;
+            width: 165px;
+            text-align: center;
+        }
+
+        .form-para {
+            max-width: 399px;
+            font-size: 16px;
+            font-weight: 400;
+            color: #ABB1BB;
+        }
+
+        .commit-data {
+            margin-top: 90px;
+
+            .our-commit {
+                font-size: 16px;
+                font-weight: 600;
+                margin-bottom: 24px;
+                color: #fff;
+            }
+
+            .detail-data {
+                position: relative;
+                z-index: 10 !important;
+                margin: 12px 0px;
+                width: 339px;
+                border-radius: 100px;
+                padding: 8px;
+                background-color: #4A3709;
+            }
+
+            .double-circle-img {
+                margin-top: -100px;
+                position: absolute;
+            }
+
+            .support-text {
+                color: #ABB1BB;
+                margin-bottom: 0px !important;
+            }
+        }
+
+        .form-content {
+            margin-left: 157px;
+
+            .form-label {
+                color: #fff;
+                font-size: 16px;
+                font-weight: 600;
+            }
+
+            .custom-input {
+                background-color: $background-color;
+                border: 1px solid $border-color;
+                border-radius: 10px;
+                color: #fff;
+                padding: 20px;
+                font-size: 16px;
+
+                &::placeholder {
+                    color: #ABB1BB;
+                    font-size: 14px !important;
+                    font-weight: 400 !important;
+                }
+
+                &:focus {
+                    outline: none;
+                    box-shadow: 0 0 5px #fff;
+                    border-color: lighten($border-color, 10%);
+                }
+            }
+
+            .custom-btn {
+                margin-top: 28px;
+                width: 100%;
+                background-color: $button-color;
+                color: #fff;
+                padding: 10px 24px;
+                border: none;
+                border-radius: 100px;
+                font-size: 20px;
+                font-weight: 400;
+                transition: background-color 0.3s ease;
+
+                i {
+                    margin-right: 8px;
+                }
+            }
+
+            .form-space {
+                margin-top: 24px;
+            }
+        }
+    }
+}
+
+.card-map-data {
+    margin-top: 75px;
+    padding: 0px 72px;
+
+    .card-data {
+        border-radius: 32px;
+        background-color: #E3D0A2;
+        padding: 22px 22px;
+        width: 100%;
+
+        img {
+            width: 377px;
+            height: auto;
+        }
+
+        .card-text {
+
+            .dubai-text {
+                color: #B88917;
+                font-size: 38px;
+                font-weight: 600;
+            }
+
+            .dubai-para {
+                margin-top: 25px;
+                font-size: 20px;
+                font-weight: 400;
+                color: #2E3B55;
+
+            }
+
+            .direction-text {
+                margin-top: 43px;
+                color: #2E3B55;
+                text-decoration: underline !important;
+                font-size: 24px;
+                font-weight: 600;
+                font-family: 'SF Pro Text';
+            }
+
+            ul li {
+                margin-top: 43px;
+                color: #2E3B55;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+
+    }
+
+    .card-map {
+        border-color: #2E3B55;
+        border: 2px solid;
+        max-width: 536px;
+        border-radius: 32px !important;
+    }
+
+    .card-center-data {
+        border-radius: 32px;
+        background-color: #ABB1BB;
+        padding: 22px 22px;
+        width: 100%;
+
+        img {
+            width: 377px;
+            height: auto;
+        }
+
+        .card-text {
+
+            .dubai-text {
+                color: #2E3B55;
+                font-size: 38px;
+                font-weight: 600;
+            }
+
+            .dubai-para {
+                margin-top: 25px;
+                font-size: 20px;
+                font-weight: 400;
+                color: #2E3B55;
+
+            }
+
+            .direction-text {
+                margin-top: 43px;
+                color: #2E3B55;
+                text-decoration: underline !important;
+                font-size: 24px;
+                font-weight: 600;
+                font-family: 'SF Pro Text';
+            }
+
+            ul li {
+                margin-top: 43px;
+                color: #2E3B55;
+                font-size: 20px;
+                font-weight: 600;
+            }
+        }
+    }
+}
