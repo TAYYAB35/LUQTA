@@ -423,30 +423,542 @@
                         <div class="w-100 d-flex justify-content-center align-items-center checklist">
                             <img src="./../../../assets/images/checklist.svg" alt="">
                         </div>
-                        <form>
-                            <div class="mb-3">
-                                <label for="contestName" class="form-label">Contest Name</label>
-                                <input type="text" class="form-control" id="contestName"
-                                    aria-describedby="emailHelp">
-                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                        <form class="row">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="contestName" class="form-label">Contest Name <span nz-tooltip
+                                            nzTooltipTitle="prompt text" nzTooltipColor="black">
+                                            <i class="fa-sharp fa-light fa-circle-info ms-2"></i></span>
+                                    </label>
+                                    <input type="text" class="form-control" id="contestName">
                                 </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="exampleInputPassword1" class="form-label">Password</label>
-                                <input type="password" class="form-control" id="exampleInputPassword1">
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="contestType" class="form-label">Contest Type
+                                        <span nz-tooltip nzTooltipTitle="prompt text" nzTooltipColor="black">
+                                            <i class="fa-sharp fa-light fa-circle-info"></i></span>
+                                    </label>
+                                    <nz-select ngModel="lucy" class="d-block">
+                                        <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
+                                        <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
+                                        <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
+                                    </nz-select>
+                                </div>
                             </div>
-                            <div class="mb-3 form-check">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">Start Date <span nz-tooltip
+                                            nzTooltipTitle="prompt text" nzTooltipColor="black">
+                                            <i class="fa-sharp fa-light fa-circle-info"></i></span></label>
+                                    <nz-date-picker [(ngModel)]="date" name="start date"
+                                        (ngModelChange)="onChange($event)"></nz-date-picker>
+                                </div>
                             </div>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="exampleInputPassword1" class="form-label">End Date <span nz-tooltip
+                                            nzTooltipTitle="prompt text" nzTooltipColor="black">
+                                            <i class="fa-sharp fa-light fa-circle-info"></i></span>
+                                    </label>
+                                    <nz-date-picker [(ngModel)]="date" name="end date"
+                                        (ngModelChange)="onChange($event)"></nz-date-picker>
+                                </div>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary w-100">Submit</button>
                         </form>
                     </div>
                 </div>
             </div>
-
         </section>
 
+        <div class="reviews-container">
+            <div class="title">
+                Here is what our
+                <span class="grow">
+                    Clients
+                </span>
+                say about out
+                <span class="creative">
+                    product
+                </span>
+            </div>
+            <div class="content">
+                <owl-carousel-o [options]="reviewOptions">
+
+                    <ng-container *ngFor="let slide of slidesStore">
+                        <ng-template carouselSlide [id]="slide.id">
+                            <div class="review">
+                                <div class="profile">
+                                    <img src="https://plus.unsplash.com/premium_photo-1689977968861-9c91dbb16049?w=1200&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWFufGVufDB8fDB8fHww"
+                                        alt="avatar" class="avatar">
+                                    <div class="info">
+                                        <h6>
+                                            Robert Lee
+                                            <i class="fa-sharp fa-solid fa-badge-check"></i>
+                                        </h6>
+                                        <p>&#64;RobertLeeBiz</p>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, ea.</p>
+                                <div class="bottom">
+                                    <span class="date">
+                                        December 13,2003
+                                    </span>
+                                    <div class="stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </ng-template>
+                    </ng-container>
+
+                </owl-carousel-o>
+            </div>
+        </div>
+
+        <div class="ribbens">
+
+            <div class="marquee orange">
+                <div>
+                    <span>
+                        <img src="assets/images/lo.svg" alt="">
+                        Lorem ipsum dolor sit amet consectetur,
+                    </span>
+                    <span>
+                        <img src="assets/images/lo.svg" alt="">
+                        Lorem ipsum dolor sit amet consectetur,
+                    </span>
+                    <span>
+                        <img src="assets/images/lo.svg" alt="">
+                        Lorem ipsum dolor sit amet consectetur,
+                    </span>
+                    <span>
+                        <img src="assets/images/lo.svg" alt="">
+                        Lorem ipsum dolor sit amet consectetur,
+                    </span>
+
+                </div>
+            </div>
+            <div class="marquee info">
+                <div>
+                    <span>
+                        <img src="assets/images/lo.svg" alt="">
+                        Lorem ipsum dolor sit amet consectetur,
+                    </span>
+                    <span>
+                        <img src="assets/images/lo.svg" alt="">
+                        Lorem ipsum dolor sit amet consectetur,
+                    </span>
+                    <span>
+                        <img src="assets/images/lo.svg" alt="">
+                        Lorem ipsum dolor sit amet consectetur,
+                    </span>
+                    <span>
+                        <img src="assets/images/lo.svg" alt="">
+                        Lorem ipsum dolor sit amet consectetur,
+                    </span>
+
+                </div>
+            </div>
+
+        </div>
+
+        <section class="price-container">
+            <h1 style="margin-bottom: 0px;">Plans & Pricing</h1>
+            <div class="row">
+                <div class="col-12 text-div">
+                    <div class="header d-flex flex-column ">
+                        <p class="header-text">
+                            Whether your time-saving automation needs are large or small,
+                            we're here to help you scale.
+                        </p>
+                        <nav style="min-width: 274px;width: fit-content;">
+                            <div class="price">
+                                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                    <button class="nav-link active" id="monthly-tab" data-bs-toggle="tab"
+                                        data-bs-target="#monthly" type="button" role="tab" aria-controls="monthly"
+                                        aria-selected="true">
+                                        Monthly
+                                    </button>
+                                    <button class="nav-link" id="yearly-tab" data-bs-toggle="tab"
+                                        data-bs-target="#yearly" type="button" role="tab" aria-controls="yearly"
+                                        aria-selected="false">
+                                        Yearly
+                                    </button>
+                                </div>
+                            </div>
+                        </nav>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="tab-content" id="nav-tabContent" style="margin-top: 57px !important;">
+                    <div class="tab-pane fade show active" id="monthly" role="tabpanel" aria-labelledby="monthly-tab">
+                        <div class="plans-section">
+                            <div class="plans-card ">
+                                <div class="price-card">
+                                    <div>
+                                        <div class="heading">
+                                            <h1>
+                                                $0
+                                                <small>
+                                                    /month
+                                                </small>
+                                            </h1>
+                                        </div>
+                                        <h3>Free</h3>
+                                        <h6>
+                                            Start your journey for free.
+                                            Explore the basics
+                                        </h6>
+                                        <div class="pkg-options">
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Multi-step Zaps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    1 Premium Apps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    1 Users team
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" [routerLink]="'/subscription/upgrade'">
+                                        Upgrade Plan
+                                    </button>
+                                </div>
+                                <div class="price-card">
+                                    <div>
+                                        <div class="heading">
+                                            <h1 class="current-plan">
+                                                $19
+                                                <small>
+                                                    /month
+                                                </small>
+                                            </h1>
+                                            <span class="badge ">
+                                                Current plan
+                                            </span>
+                                        </div>
+                                        <h3>Starter</h3>
+                                        <h6>
+                                            Unleash the power of automation.
+                                        </h6>
+                                        <div class="pkg-options">
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Multi-step Zaps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    3 Premium Apps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    2 Users team
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" [routerLink]="'/subscription/upgrade'">
+                                        Upgrade Plan
+                                    </button>
+                                </div>
+                                <div class="price-card">
+                                    <div>
+                                        <div class="heading">
+                                            <h1 class="current-plan">
+                                                $54
+                                                <small>
+                                                    /month
+                                                </small>
+                                            </h1>
+                                        </div>
+                                        <h3>Professional</h3>
+                                        <h6>
+                                            Advanced tools to take your work to the next level.
+                                        </h6>
+                                        <div class="pkg-options">
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Multi-step Zaps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Unlimited Premium Apps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    50 Users team
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Shared Workspace
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" [routerLink]="'/subscription/upgrade'">
+                                        Upgrade Plan
+                                    </button>
+                                </div>
+                                <div class="price-card popular pb-4">
+                                    <div>
+                                        <div class="popular-tag">
+                                            <span class="badge ">
+                                                MOST POPULAR
+                                            </span>
+                                        </div>
+                                        <div class="heading">
+                                            <h1 class="current-plan" style="color: white !important;">
+                                                $89
+                                                <small>
+                                                    /month
+                                                </small>
+                                            </h1>
+                                        </div>
+                                        <h3>Company</h3>
+                                        <h6>
+                                            Automation plus enterprise-grade features.
+                                        </h6>
+                                        <div class="pkg-premium-options">
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Multi-step Zap
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Unlimited Premium Apps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Unlimited Users Team
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Advanced Admin
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Custom Data Retention
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-secondary w-100" [routerLink]="'/subscription/upgrade'">
+                                        Choose plan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="yearly" role="tabpanel" aria-labelledby="yearly-tab">
+                        <div class="plans-section">
+                            <div class="plans-card ">
+                                <div class="price-card">
+                                    <div>
+                                        <div class="heading">
+                                            <h1 class="current-plan">
+                                                $19
+                                                <small>
+                                                    /year
+                                                </small>
+                                            </h1>
+                                            <span class="badge ">
+                                                Current plan
+                                            </span>
+                                        </div>
+                                        <h3>Starter</h3>
+                                        <h6>
+                                            Unleash the power of automation.
+                                        </h6>
+                                        <div class="pkg-options">
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Multi-step Zaps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    3 Premium Apps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    2 Users team
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" [routerLink]="'/subscription/upgrade'">
+                                        Upgrade Plan
+                                    </button>
+                                </div>
+                                <div class="price-card">
+                                    <div>
+                                        <div class="heading">
+                                            <h1 class="current-plan">
+                                                $54
+                                                <small>
+                                                    /year
+                                                </small>
+                                            </h1>
+                                        </div>
+                                        <h3>Professional</h3>
+                                        <h6>
+                                            Advanced tools to take your work to the next level.
+                                        </h6>
+                                        <div class="pkg-options">
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Multi-step Zaps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Unlimited Premium Apps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    50 Users team
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Shared Workspace
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-primary" [routerLink]="'/subscription/upgrade'">
+                                        Upgrade Plan
+                                    </button>
+                                </div>
+                                <div class="price-card popular pb-4">
+                                    <div>
+                                        <div class="popular-tag ">
+                                            <span class="badge ">
+                                                MOST POPULAR
+                                            </span>
+                                        </div>
+                                        <div class="heading">
+                                            <h1 class="current-plan text-white" style="color: white !important;">
+                                                $89
+                                                <small>
+                                                    /year
+                                                </small>
+                                            </h1>
+                                        </div>
+                                        <h3>Company</h3>
+                                        <h6>
+                                            Automation plus enterprise-grade features.
+                                        </h6>
+                                        <div class="pkg-premium-options">
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Multi-step Zap
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Unlimited Premium Apps
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Unlimited Users Team
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Advanced Admin
+                                                </span>
+                                            </div>
+                                            <div class="option">
+                                                <i class="fa-sharp-duotone fa-solid fa-circle-check"></i>
+                                                <span>
+                                                    Custom Data Retention
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn btn-secondary" [routerLink]="'/subscription/upgrade'">
+                                        Choose plan
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="FAQ row">
+            <div class="col-lg-6">
+                <div class="faq-title">
+                    <div class="title">
+                        Frequently
+                        <span class="creative">
+                            asked
+                        </span>
+                        questions
+                    </div>
+                    <p>
+                        For any unanswered questions, reach out to our support team via email. We'll respond as soon as
+                        possible to assist you.
+                    </p>
+                </div>
+            </div>
+        </section>
     </main>
 
 </div>

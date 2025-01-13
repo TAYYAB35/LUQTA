@@ -12,9 +12,14 @@ import { RouterLink } from '@angular/router';
 export class HeaderComponent {
 
   selectedLang: string = 'en';
+  dropdownOpen = false;
 
   setLanguage(lang: string) {
     this.selectedLang = lang; // Update the selected language
+  }
+
+  toggleDropdown() {
+    this.dropdownOpen = !this.dropdownOpen;
   }
 
 }

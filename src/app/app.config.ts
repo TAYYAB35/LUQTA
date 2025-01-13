@@ -5,6 +5,8 @@ import { routes } from './app.routes';
 import { HttpClientModule, provideHttpClient, HttpClient } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import { provideNzI18n, en_US } from 'ng-zorro-antd/i18n';
+import { provideNzIcons } from 'ng-zorro-antd/icon';
 
 export const appConfig: ApplicationConfig = {
   providers: [
@@ -13,6 +15,7 @@ export const appConfig: ApplicationConfig = {
     importProvidersFrom(FormsModule),
     importProvidersFrom(HttpClientModule),
     provideAnimationsAsync(),
+    provideNzI18n(en_US),
     provideHttpClient(),
     importProvidersFrom(
     ),
