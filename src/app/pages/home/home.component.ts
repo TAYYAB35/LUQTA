@@ -7,11 +7,12 @@ import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { RouterLink } from '@angular/router';
+import { FaqComponent } from '../../components/faq/faq.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, FormsModule, CarouselModule, CommonModule, NzToolTipModule, NzDatePickerModule, NzSelectModule, RouterLink, ReactiveFormsModule],
+  imports: [HeaderComponent, FormsModule, CarouselModule, CommonModule, NzToolTipModule, NzDatePickerModule, NzSelectModule, RouterLink, ReactiveFormsModule,FaqComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
