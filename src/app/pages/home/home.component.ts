@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from '../../components/header/header.component';
 import { CarouselModule, OwlOptions } from 'ngx-owl-carousel-o';
 import { CommonModule } from '@angular/common';
 import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { NzDatePickerModule } from 'ng-zorro-antd/date-picker';
-import { FormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { NzSelectModule } from 'ng-zorro-antd/select';
 import { RouterLink } from '@angular/router';
 import { FaqComponent } from '../../components/faq/faq.component';
@@ -12,15 +12,35 @@ import { FaqComponent } from '../../components/faq/faq.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent,FormsModule,CarouselModule,CommonModule,NzToolTipModule,NzDatePickerModule,NzSelectModule,RouterLink,FaqComponent],
+  imports: [HeaderComponent, FormsModule, CarouselModule, CommonModule, NzToolTipModule, NzDatePickerModule, NzSelectModule, RouterLink, ReactiveFormsModule,FaqComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
-export class HomeComponent {
-  date = null;
+export class HomeComponent implements OnInit {
+  constructor(private fb: FormBuilder) { }
+
+  contestForm!: FormGroup;
+
+  ngOnInit(): void {
+    this.contestForm = this.fb.group({
+      contestName: ['', Validators.required],
+      contestType: ['', Validators.required],
+      startDate: ['', Validators.required],
+      endDate: ['', Validators.required]
+    });
+  }
+
+  onSubmit(): void {
+    if (this.contestForm.valid) {
+      console.log('Form Data:', this.contestForm.value);
+    } else {
+      console.log('Form is invalid');
+    }
+  }
+
   customOptions: OwlOptions = {
     loop: true,
-    autoplay : true,
+    autoplay: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
@@ -44,7 +64,7 @@ export class HomeComponent {
 
   reviewOptions: OwlOptions = {
     loop: true,
-    autoplay : true,
+    autoplay: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
@@ -70,7 +90,7 @@ export class HomeComponent {
 
   ribbenOptions: OwlOptions = {
     loop: true,
-    autoplay : true,
+    autoplay: true,
     mouseDrag: true,
     touchDrag: true,
     pullDrag: true,
@@ -96,37 +116,33 @@ export class HomeComponent {
 
   slidesStore = [
     {
-      'id' : '1',
-      'src' :'./../../../assets/images/comp-logo/Item.svg',
-      'title' : 'sparkweb'
+      'id': '1',
+      'src': './../../../assets/images/comp-logo/Item.svg',
+      'title': 'sparkweb'
     },
     {
-      'id' : '2',
-      'src' :'./../../../assets/images/comp-logo/Item2.svg',
-      'title' : 'webgear'
+      'id': '2',
+      'src': './../../../assets/images/comp-logo/Item2.svg',
+      'title': 'webgear'
     },
     {
-      'id' : '3',
-      'src' :'./../../../assets/images/comp-logo/Item3.svg',
-      'title' : 'digitech'
+      'id': '3',
+      'src': './../../../assets/images/comp-logo/Item3.svg',
+      'title': 'digitech'
     },
     {
-      'id' : '4',
-      'src' :'./../../../assets/images/comp-logo/Item4.svg',
-      'title' : 'codelink'
+      'id': '4',
+      'src': './../../../assets/images/comp-logo/Item4.svg',
+      'title': 'codelink'
     },
   ]
 
-  onChange(result: Date): void {
-    console.log('onChange: ', result);
-  }
-
   ribbonItems = [
-    { src : 'assets/images/lo.svg', text: 'Lorem ipsum dolor sit amet' },
-    { src : 'assets/images/lo.svg', text: 'Lorem ipsum dolor sit amet' },
-    { src : 'assets/images/lo.svg', text: 'Lorem ipsum dolor sit amet' },
-    { src : 'assets/images/lo.svg', text: 'Lorem ipsum dolor sit amet' },
+    { src: 'assets/images/lo.svg', text: 'Lorem ipsum dolor sit amet' },
+    { src: 'assets/images/lo.svg', text: 'Lorem ipsum dolor sit amet' },
+    { src: 'assets/images/lo.svg', text: 'Lorem ipsum dolor sit amet' },
+    { src: 'assets/images/lo.svg', text: 'Lorem ipsum dolor sit amet' },
   ];
-  
+
 
 }

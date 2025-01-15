@@ -423,50 +423,68 @@
                         <div class="w-100 d-flex justify-content-center align-items-center checklist">
                             <img src="./../../../assets/images/checklist.svg" alt="">
                         </div>
-                        <form class="row">
+                        <form [formGroup]="contestForm" (ngSubmit)="onSubmit()" class="row custom-form">
                             <div class="col-12">
                                 <div class="mb-3">
-                                    <label for="contestName" class="form-label">Contest Name <span nz-tooltip
-                                            nzTooltipTitle="prompt text" nzTooltipColor="black">
-                                            <i class="fa-sharp fa-light fa-circle-info ms-2"></i></span>
+                                    <label for="contestName" class="form-label">
+                                        Contest Name
+                                        <span nz-tooltip nzTooltipTitle="Provide the contest name."
+                                            nzTooltipColor="black">
+                                            <i class="fa-sharp fa-light fa-circle-info"></i>
+                                        </span>
                                     </label>
-                                    <input type="text" class="form-control" id="contestName">
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="mb-3">
-                                    <label for="contestType" class="form-label">Contest Type
-                                        <span nz-tooltip nzTooltipTitle="prompt text" nzTooltipColor="black">
-                                            <i class="fa-sharp fa-light fa-circle-info"></i></span>
-                                    </label>
-                                    <nz-select ngModel="lucy" class="d-block">
-                                        <nz-option nzValue="jack" nzLabel="Jack"></nz-option>
-                                        <nz-option nzValue="lucy" nzLabel="Lucy"></nz-option>
-                                        <nz-option nzValue="disabled" nzLabel="Disabled" nzDisabled></nz-option>
-                                    </nz-select>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">Start Date <span nz-tooltip
-                                            nzTooltipTitle="prompt text" nzTooltipColor="black">
-                                            <i class="fa-sharp fa-light fa-circle-info"></i></span></label>
-                                    <nz-date-picker [(ngModel)]="date" name="start date"
-                                        (ngModelChange)="onChange($event)"></nz-date-picker>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="mb-3">
-                                    <label for="exampleInputPassword1" class="form-label">End Date <span nz-tooltip
-                                            nzTooltipTitle="prompt text" nzTooltipColor="black">
-                                            <i class="fa-sharp fa-light fa-circle-info"></i></span>
-                                    </label>
-                                    <nz-date-picker [(ngModel)]="date" name="end date"
-                                        (ngModelChange)="onChange($event)"></nz-date-picker>
+                                    <input type="text" formControlName="contestName" class="form-control"
+                                        id="contestName" placeholder="Samsung" />
                                 </div>
                             </div>
 
-                            <button type="submit" class="btn btn-primary w-100">Submit</button>
+                            <div class="col-12">
+                                <div class="mb-3">
+                                    <label for="contestType" class="form-label">
+                                        Contest Type
+                                        <span nz-tooltip nzTooltipTitle="Select the type of contest."
+                                            nzTooltipColor="black">
+                                            <i class="fa-sharp fa-light fa-circle-info"></i>
+                                        </span>
+                                    </label>
+                                    <select formControlName="contestType" class="form-select" id="contestType">
+                                        <option value="">Select Contest Type</option>
+                                        <option value="Download my App">Download my App</option>
+                                        <option value="Contest Type 1">Contest Type 1</option>
+                                        <option value="Contest Type 2">Contest Type 2</option>
+                                        <option value="Contest Type 3">Contest Type 3</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="startDate" class="form-label">
+                                        Start Date
+                                        <span nz-tooltip nzTooltipTitle="Select the start date." nzTooltipColor="black">
+                                            <i class="fa-sharp fa-light fa-circle-info"></i>
+                                        </span>
+                                    </label>
+                                    <input type="date" formControlName="startDate" class="form-control"
+                                        id="startDate" />
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="endDate" class="form-label">
+                                        End Date
+                                        <span nz-tooltip nzTooltipTitle="Select the end date." nzTooltipColor="black">
+                                            <i class="fa-sharp fa-light fa-circle-info"></i>
+                                        </span>
+                                    </label>
+                                    <input type="date" formControlName="endDate" class="form-control" id="endDate" />
+                                </div>
+                            </div>
+
+                            <div class="col-12">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
                         </form>
                     </div>
                 </div>
