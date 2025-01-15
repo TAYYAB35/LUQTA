@@ -8,7 +8,7 @@ import { HeaderComponent } from './components/header/header.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet , FormsModule , NzSelectModule,FooterComponent,HeaderComponent],
+  imports: [RouterOutlet, FormsModule, NzSelectModule, FooterComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

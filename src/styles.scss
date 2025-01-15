@@ -1035,12 +1035,14 @@ html {
         margin-top: 150px;
         background-color: $teal;
         position: relative;
+        border-radius: 32px;
 
         .tr {
             position: absolute;
             right: 0px;
             top: 0px;
             z-index: 10;
+            border-radius: 32px;
         }
 
         .header {
@@ -1305,8 +1307,8 @@ html {
     }
 
     .FAQ {
-        padding: 70px;
-        margin-bottom: 75px;
+        padding: 75px 71px;
+        margin-bottom: 250px;
 
         .faq-title {
             max-width: 513px;
@@ -1400,7 +1402,7 @@ html {
 
 footer {
     background-color: #d3b773;
-    padding-top: 150px;
+    padding-top: 230px;
     padding-bottom: 73px;
 
     .logo-box {

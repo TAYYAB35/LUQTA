@@ -1,0 +1,120 @@
+.get-app-content {
+    padding: 0px 130px;
+    position: absolute;
+    z-index: 10;
+    margin-top: -285px;
+
+    .get-app-bg {
+        background-color: #251B05;
+        border-radius: 32px;
+        width: 100%;
+        height: auto;
+        max-width: 1181px;
+
+        .get-app-data {
+            padding: 26px 0px 26px 73px;
+
+            .get-h1 {
+                font-size: 56px;
+                font-weight: 700;
+                line-height: 62px;
+                color: #ffffff;
+            }
+
+            .get-luqta {
+                font-size: 48px;
+                font-weight: 400;
+                background-color: #85AAC5;
+                border-radius: 40px;
+                padding: 10px;
+                line-height: 62px;
+                color: #ffffff;
+            }
+
+            .get-form {
+                margin-top: 17px;
+                font-size: 24px;
+                font-weight: 600;
+                color: #ffffff;
+            }
+
+            .get-button {
+                margin-top: 24px;
+
+                .get-it {
+                    background-color: #B88917;
+                    border-radius: 11px;
+                    width: 100%;
+                    max-width: 227px;
+
+                    .get-data {
+                        padding: 18px 30px;
+
+                        .google-play {
+                            display: flex;
+                            flex-direction: column;
+
+                            .get-on {
+                                font-size: 12px;
+                                font-weight: 400;
+                                color: #ffffff;
+                                margin-bottom: 0px !important;
+                            }
+
+                            .google-play {
+                                font-size: 20px;
+                                font-weight: 400;
+                                color: #ffffff;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .scan-content {
+                margin-top: 19px;
+
+                .scan-text {
+                    font-size: 24px;
+                    font-weight: 600;
+                    color: #ffffff;
+                }
+
+                .bar-code {
+                    margin-top: 13px;
+
+                    .qr-code {
+                        width: 100%;
+                        height: auto;
+                        max-width: 159px;
+                    }
+                }
+
+            }
+        }
+
+        .col-lg-6 {
+            position: relative;
+            height: 100%; // Ensure the container height is sufficient for positioning
+
+            .app-download {
+                width: 100%;
+                max-width: 483px;
+                height: auto;
+                margin-right: -12px;
+                margin-top: -1px;
+                border-radius: 32px !important;
+            }
+
+            .mobiles {
+                max-width: 416px;
+                width: 100%;
+                height: auto;
+                margin-right: 192px;
+                bottom: 0;
+                margin-top: 48px;
+            }
+        }
+    }
+}
