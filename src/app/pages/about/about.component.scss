@@ -140,7 +140,6 @@
 
 .card-show {
     margin-top: 75px;
-    padding: 0px 72px;
 
     .innovation {
         display: flex;
@@ -223,6 +222,7 @@
         height: 404px;
         margin-left: auto;
         margin-right: auto;
+        padding: 0px !important;
 
         .mission-content,
         .vission-content {
