@@ -1217,10 +1217,10 @@ html {
             width: 100%;
 
             .title {
-                font-size: 42px;
-                font-weight: 800;
+                font-size: 56px;
+                font-weight: 700;
                 line-height: 62px;
-                color: $primary;
+                color: #120A0B;
                 position: relative;
                 margin-bottom: 48px;
 
@@ -1231,6 +1231,7 @@ html {
                     color: white;
                     font-family: 'Salsa' !important;
                     font-size: 48px;
+                    font-weight: 400;
                     line-height: 64px;
                     border-radius: 34px;
                     margin-right: 4px;
@@ -1260,6 +1261,7 @@ html {
                 border-bottom: 0px;
                 transition: border 1s ease-in;
                 border-radius: 16px 16px 0px 0px;
+                font-family: 'SF Pro Text' !important;
             }
 
             .accordion-button.collapsed {
@@ -1276,8 +1278,9 @@ html {
                 transition: none !important;
                 font-size: 20px;
                 font-weight: 400;
-                color: black;
+                color: #454140;
                 padding-top: 0px;
+                font-family: 'SF Pro Text' !important;
             }
 
             .accordion-button::after {
