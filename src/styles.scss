@@ -229,11 +229,14 @@ html {
 
     .top-section {
         min-height: 100vh;
+        padding-top: 240px;
         position: relative;
         background: url('./assets/images/Slice\ 1.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+        margin-top: -80px;
+        z-index: 50;
     }
 
     .hero-section {
@@ -243,7 +246,6 @@ html {
             max-width: 652px;
             width: 100%;
             margin: auto;
-            margin-top: 240px;
 
             .title {
                 font-size: 42px;
@@ -736,6 +738,9 @@ html {
 
                 .form-container {
                     padding: 12px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
 
                     .checklist {
                         padding: 86px;
@@ -746,7 +751,8 @@ html {
                         background-color: white;
                         padding: 18px 24px;
                         height: 412px;
-
+                        margin: 0px auto;
+                        
                         .form-label {
                             font-weight: 600;
                             font-size: 16px;
@@ -950,7 +956,14 @@ html {
         padding: 63px 60px;
         margin-top: 150px;
         background-color: $teal;
+        position: relative;
 
+        .tr{
+            position: absolute;
+            right: 0px;
+            top: 0px;
+            z-index: 10;
+        }
         .header {
             max-width: 728px;
             width: 100%;
@@ -1013,7 +1026,8 @@ html {
         .plans-section {
             width: 100%;
             padding-top: 32px;
-
+            position: relative;
+            z-index: 100;
             .plans-card {
                 width: 100%;
                 height: fit-content;
@@ -1399,7 +1413,8 @@ footer {
         .social-icons {
             display: flex;
             gap: 20px;
-            img{
+
+            img {
                 cursor: pointer;
             }
         }
