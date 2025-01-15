@@ -1,0 +1,46 @@
+.custom-form {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    padding: 24px;
+
+    .form-label {
+        display: flex;
+        align-items: center;
+
+        span {
+            margin-left: 8px;
+        }
+    }
+
+    .form-control,
+    .form-select {
+        background-color: #F5F5F9;
+        border: none;
+        border-radius: 12px;
+        padding: 18px;
+        font-size: 14px;
+        box-shadow: none !important;
+
+        &::placeholder {
+            color: #00000066;
+            font-weight: 400;
+            font-size: 14px;
+        }
+    }
+
+    button[type="submit"] {
+        background-color: #1e293b;
+        border-color: none;
+        color: #fff;
+        font-size: 17px;
+        font-weight: 500;
+        padding: 10px;
+        border-radius: 12px;
+        width: 100%;
+
+        &:hover {
+            background-color: #2E3B55;
+            border-color: #2E3B55;
+        }
+    }
+}
