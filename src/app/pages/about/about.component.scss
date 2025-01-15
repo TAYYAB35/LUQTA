@@ -348,13 +348,12 @@
             }
         }
 
-        .img-starr {
-            width: 650px;
-            height: 623px;
+        .tr {
             position: absolute;
             margin-top: -64px;
             right: -61px;
             border-radius: 34px;
+            z-index: 10;
         }
 
     }
