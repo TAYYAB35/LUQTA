@@ -1248,14 +1248,14 @@ html {
             .accordion-item {
                 border: none !important;
                 margin-bottom: 10px;
-                background-color: transparent ;
+                background-color: transparent;
             }
-            
+
             .accordion-button {
                 font-weight: 600;
                 font-size: 24px;
                 color: black;
-                background-color: transparent ;
+                background-color: transparent;
                 border: 2px solid $secondary;
                 border-bottom: 0px;
                 transition: border 1s ease-in;
@@ -1297,6 +1297,115 @@ html {
     }
 
 }
+
+footer {
+    background-color: #d3b773;
+    padding-top: 150px;
+    padding-bottom: 73px;
+
+    .logo-box {
+        img {
+            opacity: 0.5;
+        }
+
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #726e66;
+            margin-top: 30px;
+        }
+    }
+
+    .info {
+        .white-label {
+            font-size: 20px;
+            font-weight: 600;
+            color: white !important;
+            margin-bottom: 36px;
+        }
+
+        ul {
+            list-style: none !important;
+            padding-left: 0px !important;
+
+            li {
+                font-size: 20px;
+                font-weight: 400;
+                color: #726e66;
+                margin-bottom: 36px;
+                cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+
+                }
+            }
+
+        }
+    }
+
+    .input-section {
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #726e66;
+            margin-bottom: 30px;
+        }
+
+        .input {
+            height: 68px;
+            background-color: white !important;
+            position: relative;
+            border-radius: 60px;
+
+            input {
+                border-radius: 60px;
+                border: none;
+                height: 100%;
+                width: 100%;
+                font-size: 20px;
+                font-weight: 600;
+                padding: 12px 20px;
+                padding-right: 140px;
+            }
+
+            .icon {
+                position: absolute;
+                width: 120px;
+                height: 44px;
+                border-radius: 32px;
+                background-color: #8a8e94;
+                color: white;
+                font-size: 16px;
+                font-weight: 600;
+                right: 12px;
+                @include flex-container(row, center, center);
+                top: 12px;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .copyright {
+        @include flex-container(row, space-between, center);
+        margin-top: 70px;
+
+        span {
+            font-size: 20px;
+            font-weight: 400;
+            color: #726e66;
+        }
+
+        .social-icons {
+            display: flex;
+            gap: 20px;
+            img{
+                cursor: pointer;
+            }
+        }
+    }
+}
+
 
 @keyframes colorAnimation {
     0% {
