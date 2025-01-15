@@ -10,6 +10,8 @@ export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
-    { path: 'page-not-found', component: ErrorComponent },
-    { path: 'data-no-found', component: DataNotFondComponent }
+    { path: 'data-no-found', component: DataNotFondComponent },
+
+    { path: '**', component: ErrorComponent }
+
 ];
