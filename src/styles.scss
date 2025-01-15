@@ -255,6 +255,12 @@ html {
                 position: relative;
                 margin-bottom: 27px;
 
+                @include respond('phone') {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+    
+
                 .arrow-container {
                     display: inline-block;
                     position: relative;
@@ -340,6 +346,15 @@ html {
             gap: 26px;
             padding: 0px 74px;
 
+            @include respond('phone') {
+                gap: 30px;
+                grid-template-columns: repeat(1, 1fr);
+            }
+
+            @include respond('tab-port') {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
             .stat {
                 border: 2px solid $golden;
                 padding: 72px 52px;
@@ -366,7 +381,9 @@ html {
                 }
 
                 &:nth-child(even) {
-                    margin-top: 42px;
+                    @include respond('phone') {
+                        margin-top: 0px;
+                    }
                 }
             }
         }
@@ -390,9 +407,10 @@ html {
         background-color: $teal;
         position: relative;
         margin-bottom: 75px;
-        height: 612px;
+        min-height: 612px;
         overflow: hidden;
         border-radius: 52px;
+        height: fit-content;
 
         .d1 {
             position: absolute;
@@ -422,7 +440,17 @@ html {
         .content {
             max-width: 556px;
             width: 100%;
-            padding-left: 60px;
+            padding: 60px;
+            position: relative;
+            z-index: 50;
+
+            @include respond('phone') {
+                max-width: 100%;
+            }
+
+            @include respond('tab-port') {
+                max-width: 100%;
+            }
 
             .title {
                 font-weight: 600;
@@ -430,6 +458,12 @@ html {
                 line-height: 48px;
                 color: white;
                 margin-bottom: 33px;
+
+                @include respond('phone') {
+                    padding-left: 25px;
+                    padding-right: 25px;
+                }
+    
 
                 .grow {
                     background-color: $info-lt;
@@ -531,6 +565,12 @@ html {
             text-align: center;
             word-spacing: 10px;
 
+            @include respond('phone') {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+
             .grow {
                 background-color: $info-lt;
                 color: white;
@@ -605,6 +645,12 @@ html {
             text-align: center;
             word-spacing: 10px;
 
+            @include respond('phone') {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
+
+
             .grow {
                 background-color: $info-lt;
                 color: white;
@@ -640,6 +686,14 @@ html {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
 
+                @include respond('phone') {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
+                @include respond('tab-port') {
+                    grid-template-columns: repeat(1, 1fr);
+                }
+
                 .detail {
                     border-right: 1px solid $secondary;
 
@@ -647,6 +701,16 @@ html {
                         padding: 73px 0px 40px 28px;
                         max-width: 545px;
                         width: 100%;
+
+                        @include respond('phone') {
+                            padding: 40px 28px;
+                            max-width: 100%;
+                        }
+
+                        @include respond('tab-port') {
+                            max-width: 100%;
+                            padding: 40px 28px;
+                        }
 
                         h1 {
                             font-size: 38px;
@@ -733,6 +797,14 @@ html {
 
                     .check-result {
                         border-radius: 0px 0px 0px 22px;
+
+                        @include respond('phone') {
+                            border-radius: 0px;
+                        }
+
+                        @include respond('tab-port') {
+                            border-radius: 0px;
+                        }
                     }
                 }
 
@@ -750,9 +822,10 @@ html {
                         border-radius: 22px;
                         background-color: white;
                         padding: 18px 24px;
-                        height: 412px;
+                        min-height: 412px;
                         margin: 0px auto;
-                        
+                        height: fit-content;
+
                         .form-label {
                             font-weight: 600;
                             font-size: 16px;
@@ -788,6 +861,11 @@ html {
             margin-bottom: 27px;
             text-align: center;
             margin-bottom: 64px;
+
+            @include respond('phone') {
+                padding-left: 25px;
+                padding-right: 25px;
+            }
 
             .grow {
                 background-color: $info-lt;
@@ -958,15 +1036,18 @@ html {
         background-color: $teal;
         position: relative;
 
-        .tr{
+        .tr {
             position: absolute;
             right: 0px;
             top: 0px;
             z-index: 10;
         }
+
         .header {
             max-width: 728px;
             width: 100%;
+            position: relative;
+            z-index: 100;
         }
 
         h1 {
@@ -1028,6 +1109,7 @@ html {
             padding-top: 32px;
             position: relative;
             z-index: 100;
+
             .plans-card {
                 width: 100%;
                 height: fit-content;
@@ -1237,6 +1319,7 @@ html {
                 color: $primary;
                 position: relative;
                 margin-bottom: 48px;
+                
 
                 .creative {
                     padding: 6px 14px;
