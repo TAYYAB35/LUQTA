@@ -1248,13 +1248,14 @@ html {
             .accordion-item {
                 border: none !important;
                 margin-bottom: 10px;
+                background-color: transparent ;
             }
-
+            
             .accordion-button {
                 font-weight: 600;
                 font-size: 24px;
                 color: black;
-                background-color: white;
+                background-color: transparent ;
                 border: 2px solid $secondary;
                 border-bottom: 0px;
                 transition: border 1s ease-in;
