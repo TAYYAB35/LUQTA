@@ -9,11 +9,12 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 import { RouterLink } from '@angular/router';
 import { FaqComponent } from '../../components/faq/faq.component';
 import { FooterComponent } from '../../components/footer/footer.component';
+import { GetAppComponent } from '../../components/get-app/get-app.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, FormsModule, CarouselModule, CommonModule, NzToolTipModule,FooterComponent, NzDatePickerModule, NzSelectModule, RouterLink, ReactiveFormsModule,FaqComponent],
+  imports: [FormsModule, CarouselModule, CommonModule, NzToolTipModule, NzDatePickerModule, NzSelectModule, RouterLink, ReactiveFormsModule, FaqComponent, GetAppComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss'
 })
