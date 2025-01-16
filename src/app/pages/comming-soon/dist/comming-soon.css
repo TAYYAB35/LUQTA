@@ -1,0 +1,83 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.coming-soon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+  background: url("/assets/images/bg.jpeg") no-repeat center center;
+  background-size: cover; /* Ensures the image fits without stretching */
+  position: relative;
+}
+
+.content {
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  font-size: 196px;
+  font-family: "Arial", sans-serif;
+  margin-bottom: 20px;
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+.countdown span {
+  display: inline-block;
+  text-align: center;
+}
+
+.countdown small {
+  display: block;
+  font-size: 0.8rem;
+}
+
+/* Style for the bottom-right image */
+.bottom-right-image {
+  position: absolute;
+  bottom: -5px;
+  right: -29px;
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+}
+
+/* SVG Shape Styling */
+.bottom-left-shape {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: auto;
+  z-index: 100;
+  height: auto;
+}
+
+/* New SVG Styling */
+.bottom-left-new-shape {
+  position: absolute;
+  bottom: 42px;
+  left: 17px;
+  /* Ensures the new SVG stays behind the shape */
+  width: auto;
+  height: auto;
+}
+
+.bottom-left-new-side-shape {
+  position: absolute;
+  bottom: 77px;
+  left: 157px;
+  width: auto;
+  height: auto;
+}
