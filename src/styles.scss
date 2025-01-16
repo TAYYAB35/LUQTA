@@ -226,12 +226,14 @@ html {
 
 .content-container {
 
+    .home-bg {
+        background: url('./assets/images/Slice\ 1.png');
+    }
 
     .top-section {
         min-height: 100vh;
         padding-top: 240px;
         position: relative;
-        background: url('./assets/images/Slice\ 1.png');
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
@@ -248,7 +250,7 @@ html {
             margin: auto;
             position: relative;
             z-index: 100;
-            background: #e7dab9;
+            // background: #e7dab9;
 
             @include respond('phone') {
                 padding: 30px;

@@ -1,10 +1,21 @@
 $background-color: #4A3709;
 $button-color: #B88917;
 $border-color: #6e520e;
+@import './../../../assets/mixin/var';
+@import './../../../assets/mixin/mixin';
+
+.bg-image {
+    background-image: url('../../../assets/images/contact-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-top: -80px;
+    padding-top: 240px;
+    padding-bottom: 165px;
+}
 
 .hero-content {
     margin-bottom: 10px;
-    margin-top: 58px;
 
     .hero-arrow {
         margin-left: 0;
@@ -30,33 +41,6 @@ $border-color: #6e520e;
             text-align: left;
         }
 
-        .query {
-            font-family: 'SF Pro Text' !important;
-            font-size: 28px;
-            font-weight: 800;
-
-            @media (min-width: 768px) {
-                font-size: 42px;
-            }
-        }
-
-        .contact-btn {
-            width: 100%;
-            max-width: 261px;
-            text-align: center;
-            border-radius: 40px;
-            font-size: 20px;
-            font-weight: 400;
-            background-color: #85AAC5;
-            color: #fff;
-            border: none;
-            font-family: 'Salsa' !important;
-            padding: 10px;
-
-            @media (min-width: 768px) {
-                font-size: 24px;
-            }
-        }
     }
 
     .hero-para {
@@ -73,7 +57,6 @@ $border-color: #6e520e;
 }
 
 .contact-data {
-    margin-top: 165px;
     border-radius: 32px;
     background-color: #251b05;
     z-index: 1000 !important;
@@ -407,5 +390,58 @@ $border-color: #6e520e;
     img {
         max-width: 400px;
         height: auto;
+    }
+}
+
+.title {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 62px;
+    color: $primary;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    margin-bottom: 27px;
+    max-width: 740px;
+
+    @include respond('phone') {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+
+
+    .arrow-container {
+        display: inline-block;
+        position: relative;
+
+        .arrow {
+            position: absolute;
+            top: -75px;
+            left: 30px;
+            opacity: 0.5;
+        }
+
+        .grow {
+            background-color: $info-lt;
+            color: white;
+            font-family: 'Salsa' !important;
+            font-size: 48px;
+            line-height: 64px;
+            border-radius: 34px;
+            padding: 6px 14px;
+            padding-top: 4px;
+        }
+    }
+
+    .creative {
+        padding: 6px 14px;
+        padding-top: 2px;
+        background-color: $success;
+        color: white;
+        font-family: 'Salsa' !important;
+        font-size: 48px;
+        line-height: 64px;
+        border-radius: 34px;
+        margin-right: 4px;
     }
 }
