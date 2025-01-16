@@ -1,15 +1,12 @@
-.get-app-content {
-    padding: 0px 130px;
-    position: absolute;
-    z-index: 10;
-    margin-top: -285px;
-
+   
     .get-app-bg {
         background-color: #251B05;
         border-radius: 32px;
         width: 100%;
         height: auto;
-        max-width: 1181px;
+        margin-bottom: -180px;
+        position: relative;
+        z-index: 100;
 
         .get-app-data {
             padding: 26px 0px 26px 73px;
@@ -117,4 +114,3 @@
             }
         }
     }
-}
