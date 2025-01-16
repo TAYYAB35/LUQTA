@@ -82,6 +82,7 @@ $border-color: #6e520e;
         padding: 92px 72px;
         display: flex;
         flex-wrap: wrap;
+        position: relative;
 
         @media (max-width: 991px) {
             padding: 50px 30px;
@@ -91,6 +92,8 @@ $border-color: #6e520e;
             width: 100%;
             max-width: 48%;
             margin-bottom: 32px;
+            position: relative;
+            z-index: 50;
 
             @media (max-width: 991px) {
                 max-width: 100%;
@@ -179,15 +182,7 @@ $border-color: #6e520e;
                     }
                 }
 
-                .double-circle-img {
-                    margin-top: -100px;
-                    position: absolute;
 
-                    @media (max-width: 767px) {
-                        position: relative;
-                        margin-top: -100px;
-                    }
-                }
 
                 .support-text {
                     color: #abb1bb;
@@ -400,5 +395,17 @@ $border-color: #6e520e;
                 font-weight: 600;
             }
         }
+    }
+}
+
+.double-circle-img {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: 10;
+
+    img {
+        max-width: 400px;
+        height: auto;
     }
 }

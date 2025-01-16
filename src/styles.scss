@@ -572,7 +572,6 @@ html {
             line-height: 68px;
             color: $primary;
             position: relative;
-            margin-bottom: 27px;
             text-align: center;
             word-spacing: 10px;
 
@@ -646,15 +645,14 @@ html {
             max-width: 633px;
             width: 100%;
             margin: 0px auto;
-            margin-bottom: 64px;
             font-size: 42px;
             font-weight: 800;
             line-height: 68px;
             color: $primary;
             position: relative;
-            margin-bottom: 27px;
             text-align: center;
             word-spacing: 10px;
+            margin-bottom: 64px;
 
             @include respond('phone') {
                 padding-left: 25px;
@@ -1316,100 +1314,99 @@ html {
 
 
     }
+}
 
-    .FAQ {
-        padding: 75px 71px;
-        margin-bottom: 250px;
+.FAQ {
+    padding: 75px 71px;
 
-        .faq-title {
-            max-width: 513px;
-            width: 100%;
+    .faq-title {
+        max-width: 513px;
+        width: 100%;
 
-            .title {
-                font-size: 56px;
-                font-weight: 700;
-                line-height: 62px;
-                color: #120A0B;
-                position: relative;
-                margin-bottom: 48px;
+        .title {
+            font-size: 56px;
+            font-weight: 700;
+            line-height: 62px;
+            color: #120A0B;
+            position: relative;
+            margin-bottom: 48px;
 
 
-                .creative {
-                    padding: 6px 14px;
-                    padding-top: 2px;
-                    background-color: $success;
-                    color: white;
-                    font-family: 'Salsa' !important;
-                    font-size: 48px;
-                    font-weight: 400;
-                    line-height: 64px;
-                    border-radius: 34px;
-                    margin-right: 4px;
-                }
-            }
-
-            p {
-                font-size: 20px;
+            .creative {
+                padding: 6px 14px;
+                padding-top: 2px;
+                background-color: $success;
+                color: white;
+                font-family: 'Salsa' !important;
+                font-size: 48px;
                 font-weight: 400;
-                color: #454140;
+                line-height: 64px;
+                border-radius: 34px;
+                margin-right: 4px;
             }
         }
 
-        .questions {
-            .accordion-item {
-                border: none !important;
-                margin-bottom: 10px;
-                background-color: transparent;
-            }
-
-            .accordion-button {
-                font-weight: 600;
-                font-size: 24px;
-                color: black;
-                background-color: transparent;
-                border: 2px solid $secondary;
-                border-bottom: 0px;
-                transition: border 1s ease-in;
-                border-radius: 16px 16px 0px 0px;
-                font-family: 'SF Pro Text' !important;
-            }
-
-            .accordion-button.collapsed {
-                border: 0px;
-            }
-
-            .accordion-collapse.collapse.show {
-                border: 2px solid $secondary;
-                border-top: 0px;
-                border-radius: 0px 0px 16px 16px !important;
-            }
-
-            .accordion-body {
-                transition: none !important;
-                font-size: 20px;
-                font-weight: 400;
-                color: #454140;
-                padding-top: 0px;
-                font-family: 'SF Pro Text' !important;
-            }
-
-            .accordion-button::after {
-                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
-                transition: all 0.5s;
-            }
-
-            .accordion-button:not(.collapsed)::after {
-                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
-            }
-
-            .accordion-button::after {
-                transition: all 0.5s;
-            }
-
+        p {
+            font-size: 20px;
+            font-weight: 400;
+            color: #454140;
         }
     }
 
+    .questions {
+        .accordion-item {
+            border: none !important;
+            margin-bottom: 10px;
+            background-color: transparent;
+        }
+
+        .accordion-button {
+            font-weight: 600;
+            font-size: 24px;
+            color: black;
+            background-color: transparent;
+            border: 2px solid $secondary;
+            border-bottom: 0px;
+            transition: border 1s ease-in;
+            border-radius: 16px 16px 0px 0px;
+            font-family: 'SF Pro Text' !important;
+        }
+
+        .accordion-button.collapsed {
+            border: 0px;
+        }
+
+        .accordion-collapse.collapse.show {
+            border: 2px solid $secondary;
+            border-top: 0px;
+            border-radius: 0px 0px 16px 16px !important;
+        }
+
+        .accordion-body {
+            transition: none !important;
+            font-size: 20px;
+            font-weight: 400;
+            color: #454140;
+            padding-top: 0px;
+            font-family: 'SF Pro Text' !important;
+        }
+
+        .accordion-button::after {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-plus' viewBox='0 0 16 16'%3E%3Cpath d='M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z'/%3E%3C/svg%3E");
+            transition: all 0.5s;
+        }
+
+        .accordion-button:not(.collapsed)::after {
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-dash' viewBox='0 0 16 16'%3E%3Cpath d='M4 8a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7A.5.5 0 0 1 4 8z'/%3E%3C/svg%3E");
+        }
+
+        .accordion-button::after {
+            transition: all 0.5s;
+        }
+
+    }
 }
+
 
 footer {
     background-color: #d3b773;
