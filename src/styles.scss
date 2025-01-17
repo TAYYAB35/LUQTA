@@ -445,7 +445,7 @@ html {
 
         .d3 {
             position: absolute;
-            right: 0px;
+            right: -12px;
             bottom: -10px;
             max-width: 30%;
             max-height: 70%;
@@ -455,7 +455,7 @@ html {
         .content {
             max-width: 556px;
             width: 100%;
-            padding: 60px;
+            padding: 0px 64px 0px 61px;
             position: relative;
             z-index: 50;
 
@@ -527,6 +527,7 @@ html {
         }
 
         .star {
+            padding: 0;
             position: absolute;
             left: 0px;
             bottom: 0px;
@@ -536,6 +537,7 @@ html {
         }
 
         .star2 {
+            padding: 0;
             position: absolute;
             right: 0px;
             top: 0px;
@@ -550,7 +552,7 @@ html {
             z-index: 50;
 
             .img {
-                // margin: -145px;
+                margin-left: 41px;
                 max-height: 806px;
                 border-radius: 32px;
             }
