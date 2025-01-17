@@ -11,14 +11,9 @@ export const routes: Routes = [
     { path: '', component: HomeComponent },
     { path: 'about', component: AboutComponent },
     { path: 'contact', component: ContactComponent },
-<<<<<<< HEAD
     { path: 'page-not-found', component: ErrorComponent },
     { path: 'data-no-found', component: DataNotFondComponent },
-    { path: 'comming-soon', component: CommingSoonComponent }
-=======
+    { path: 'comming-soon', component: CommingSoonComponent },
     { path: 'data-no-found', component: DataNotFondComponent },
-
     { path: '**', component: ErrorComponent }
-
->>>>>>> 1dd5df168b3b472d0d03467ef1bddbee0e564b7f
 ];
