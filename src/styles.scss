@@ -134,6 +134,9 @@ html {
     }
 }
 
+.row{
+    margin: 0px;
+}
 
 // buttons
 .btn-primary {
@@ -978,6 +981,14 @@ html {
         margin-bottom: 75px;
         padding-top: 60px;
 
+        .marquee {
+            height: 111px;
+            width: 100%;
+
+            overflow: hidden;
+            position: relative;
+        }
+
         .orange {
             background-color: #f8a426;
             transform: rotate(0.4deg);
@@ -993,15 +1004,11 @@ html {
             background-color: $info_lt;
             transform: rotate(-6deg);
             margin-top: -80px;
+            margin-left: -20px;
+            width: 103%;
         }
 
-        .marquee {
-            height: 111px;
-            width: 100%;
 
-            overflow: hidden;
-            position: relative;
-        }
 
         .marquee div {
             display: flex;
@@ -1129,12 +1136,26 @@ html {
                 background: #F5F5F9;
                 backdrop-filter: blur(21.833px);
                 border-radius: 32.4376px;
-                padding: 34px 60px;
-                display: flex;
+                padding: 24px 40px;
+                display: grid;
                 gap: 42px;
                 padding-top: 65px;
+                grid-template-columns: repeat(4, 1fr);
+
+                @include respond('phone') {
+                    grid-template-columns: repeat(2, 1fr);
+                }
+
+                @include respond('tab-port') {
+                    grid-template-columns: repeat(2, 1fr);
+                }
 
                 .price-card {
+                    padding: 10px 20px;
+                    &:hover {
+                        box-shadow: 0px 52.3991px 42.4184px rgba(46, 59, 85, 0.29);
+                    }
+
 
                     button {
                         height: 56px;
@@ -1282,6 +1303,14 @@ html {
                     padding: 24px 37px;
                     color: #fff;
                     margin-top: -100px;
+
+                    @include respond('phone') {
+                        margin-top: 0px;
+                    }
+
+                    @include respond('tab-port') {
+                        margin-top: 0px;
+                    }
 
                     h3 {
                         color: #fff;
