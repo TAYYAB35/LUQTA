@@ -287,6 +287,7 @@ html {
                         background-color: $info-lt;
                         color: white;
                         font-family: 'Salsa' !important;
+                        font-weight: 400;
                         font-size: 48px;
                         line-height: 64px;
                         border-radius: 34px;
@@ -303,6 +304,7 @@ html {
                     color: white;
                     font-family: 'Salsa' !important;
                     font-size: 48px;
+                    font-weight: 400;
                     line-height: 64px;
                     border-radius: 34px;
                     animation: reverseColorAnimation 1s ease-in-out infinite alternate;
@@ -446,7 +448,7 @@ html {
 
         .d3 {
             position: absolute;
-            right: 0px;
+            right: -12px;
             bottom: -10px;
             max-width: 30%;
             max-height: 70%;
@@ -456,7 +458,7 @@ html {
         .content {
             max-width: 556px;
             width: 100%;
-            padding: 60px;
+            padding: 0px 64px 0px 61px;
             position: relative;
             z-index: 50;
 
@@ -528,6 +530,7 @@ html {
         }
 
         .star {
+            padding: 0;
             position: absolute;
             left: 0px;
             bottom: 0px;
@@ -537,6 +540,7 @@ html {
         }
 
         .star2 {
+            padding: 0;
             position: absolute;
             right: 0px;
             top: 0px;
@@ -551,7 +555,7 @@ html {
             z-index: 50;
 
             .img {
-                // margin: -145px;
+                margin-left: 41px;
                 max-height: 806px;
                 border-radius: 32px;
             }
@@ -568,17 +572,16 @@ html {
         margin-bottom: 75px;
 
         .title {
-            max-width: 633px;
+            max-width: 663px;
             width: 100%;
             margin: 0px auto;
-            margin-bottom: 62px;
+            margin-bottom: 64px;
             font-size: 42px;
             font-weight: 800;
             line-height: 68px;
             color: $primary;
             position: relative;
             text-align: center;
-            word-spacing: 10px;
 
             @include respond('phone') {
                 padding-left: 25px;
@@ -590,7 +593,8 @@ html {
                 background-color: $info-lt;
                 color: white;
                 font-family: 'Salsa' !important;
-                font-size: 48px;
+                font-size: 49px;
+                font-weight: 400;
                 line-height: 68px;
                 border-radius: 34px;
                 margin-right: 4px;
@@ -602,7 +606,8 @@ html {
                 background-color: $success;
                 color: white;
                 font-family: 'Salsa' !important;
-                font-size: 48px;
+                font-size: 49px;
+                font-weight: 400;
                 line-height: 68px;
                 border-radius: 34px;
             }
@@ -647,16 +652,15 @@ html {
         margin-bottom: 75px;
 
         .title {
-            max-width: 633px;
+            max-width: 663px;
             width: 100%;
             margin: 0px auto;
             font-size: 42px;
             font-weight: 800;
-            line-height: 68px;
+            line-height: 62px;
             color: $primary;
             position: relative;
             text-align: center;
-            word-spacing: 10px;
             margin-bottom: 64px;
 
             @include respond('phone') {
@@ -669,8 +673,9 @@ html {
                 background-color: $info-lt;
                 color: white;
                 font-family: 'Salsa' !important;
-                font-size: 48px;
-                line-height: 68px;
+                font-size: 49px;
+                font-weight: 400;
+                line-height: 62px;
                 border-radius: 34px;
                 margin-right: 4px;
                 padding: 4px 8px;
@@ -681,8 +686,9 @@ html {
                 background-color: $success;
                 color: white;
                 font-family: 'Salsa' !important;
-                font-size: 48px;
-                line-height: 68px;
+                font-size: 49px;
+                font-weight: 400;
+                line-height: 62px;
                 border-radius: 34px;
             }
         }
@@ -885,7 +891,8 @@ html {
                 background-color: $info-lt;
                 color: white;
                 font-family: 'Salsa' !important;
-                font-size: 48px;
+                font-size: 49px;
+                font-weight: 400;
                 line-height: 68px;
                 border-radius: 34px;
                 margin-right: 4px;
@@ -897,7 +904,8 @@ html {
                 background-color: $success;
                 color: white;
                 font-family: 'Salsa' !important;
-                font-size: 48px;
+                font-size: 49px;
+                font-weight: 400;
                 line-height: 68px;
                 border-radius: 34px;
             }
@@ -1109,7 +1117,7 @@ html {
                 padding: 16px 28px;
                 border-radius: 27px;
                 color: #586277;
-                min-width: 136px;
+                min-width: 137px;
 
                 &:hover {
                     background-color: #b88917;
